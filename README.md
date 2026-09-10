@@ -88,15 +88,29 @@ Program terdiri dari beberapa class, yaitu:
 
 ## Value-Added
 
-Program memiliki beberapa fitur tambahan, yaitu:
-- Menggunakan access modifier `private` pada atribut.
-- Menggunakan getter dan setter sebagai penerapan encapsulation.
-- Menggunakan constructor pada setiap class.
-- Menggunakan validasi input.
-- ID transaksi tidak boleh kosong dan tidak boleh sama.
-- Pilihan layanan hanya dapat menggunakan angka 1 sampai 3.
-- Input huruf pada pilihan layanan akan ditolak dan pengguna diminta memasukkan angka kembali.
+Program menerapkan beberapa fitur tambahan untuk meningkatkan kualitas dan keamanan pengelolaan data, yaitu:
 
+### 1. Access Modifier
+Access modifier `private` diterapkan pada atribut di setiap class, seperti pada class `Pelanggan`, `Kendaraan`, `Layanan`, dan `Transaksi`. Contohnya:
+
+`private String nama;`
+
+Penggunaan `private` membuat atribut tidak dapat diakses secara langsung dari luar class.
+
+### 2. Encapsulation
+Encapsulation diterapkan melalui penggunaan getter dan setter pada setiap atribut. Contohnya pada class `Pelanggan`:
+
+`getNama()` digunakan untuk mengambil nilai nama, sedangkan `setNama()` digunakan untuk mengubah nilai nama.
+
+Penerapan ini juga digunakan ketika melakukan proses perubahan data pada fitur **Ubah Data Pencucian**.
+
+### 3. Input Validation
+Validasi input diterapkan pada proses **Tambah Data Pencucian**, terutama pada ID transaksi dan pilihan layanan.
+
+- ID transaksi tidak boleh kosong.
+- ID transaksi tidak boleh sama dengan data yang sudah tersimpan.
+- Pilihan layanan harus menggunakan angka 1 sampai 3.
+- Jika pengguna memasukkan huruf pada pilihan layanan, sistem akan menolak input tersebut dan meminta pengguna memasukkan angka kembali.
 
 
 
