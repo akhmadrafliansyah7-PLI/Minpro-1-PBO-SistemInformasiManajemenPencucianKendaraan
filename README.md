@@ -1,6 +1,6 @@
 # Minpro 1 - Pemrograman Berbasis Objek
 
-## Indetitas
+## Identitas
 
 Nama  : Akhmad Rafliansyah
 NIM   : 2509116045
